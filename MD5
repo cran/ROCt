@@ -1,0 +1,13 @@
+07c4d4d8bf48b813309bf7d9f2e924c3 *DESCRIPTION
+1a2c8ad8d5bce13e6dde3b433692b580 *NAMESPACE
+e9f2ecc70c627f8b19229773b9afd0b5 *R/prog.R
+ce8af5123c372e96cd428f6281577baa *data/dataDIVAT.rda
+a5bcc4ce6962868c4d84ea5723ac8d8a *data/datalist
+e39f87d4db4ce25fa20c88bc948a487f *data/fr.ratetable.rda
+731ddb68b8ccb4c502efe16d67a0c159 *data/rein.ratetable.rda
+d99085a99975ffd5a02cbba8cf801d97 *man/ROCt-package.Rd
+3e8ae64a9dcfb840d7193dfa1638ffd1 *man/allcause.ROCt.Rd
+e927ed472c9c92b73f30107dbebc1a74 *man/dataDIVAT.Rd
+c4756ff8ea90d332236cbb7351b532af *man/fr.ratetable.Rd
+d7a8627a9bef64ee5342aad8faed23b9 *man/net.ROCt.Rd
+2b1bc4e3e5c9c1f9870759c0e3bcad55 *man/rein.ratetable.Rd
