@@ -2,10 +2,10 @@
 \alias{fr.ratetable}
 \docType{data}
 \title{
-Expected mortality rates of the general French population.
+Expected Mortality Rates Of The General French Population.
 }
 \description{
-An object of class ratetable for the expected mortality of the French population. It is a array with three dimensions: age, sex and year.
+An object of class ratetable for the expected mortality of the French population. It is an array with three dimensions: age, sex and year.
 }
 \usage{data(fr.ratetable)}
 \format{
@@ -26,9 +26,7 @@ The organization of a ratetable object is described in details by Therneau (1999
 The original data and updates can be downloaded from the Human Life-Table Database (HMD, The Human Mortality Database). URL: http://www.mortality.org/
 }
 \references{
-T. Therneau, J. Offord. Expected Survival Based on Hazard Rates (Update), Technical Report, Section of Biostatistics, Mayo Clinic 63, 1999. 
-
-M. Pohara, J.Stare. Relative survival analysis in R. Computer methods and programs in biomedicine, 81: 272-278, 2006.
+Pohara M., Stare J. Relative survival analysis in R. Computer methods and programs in biomedicine, 81: 272-278, 2006. <DOI:10.1016/j.cmpb.2006.01.004>
 }
 \examples{
 data(fr.ratetable)

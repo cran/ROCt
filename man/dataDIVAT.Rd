@@ -2,7 +2,7 @@
 \alias{dataDIVAT}
 \docType{data}
 \title{
-A sample of the DIVAT cohort
+A Sample Of The DIVAT Cohort (Mortality).
 }
 \description{
 A data frame with 4267 French kidney transplant recipients. The time-to-event is the time between the transplantation and the recipient death. This time can be right-censored. A vector of covariates is also collected at the transplantation.
@@ -17,7 +17,7 @@ A data frame with 4267 French kidney transplant recipients. The time-to-event is
     \item{\code{ante.diab}}{This numeric vector represents the diabetes statute (1=yes, 0=no)}
     \item{\code{pra}}{This numeric vector represents the pre-graft immunization using the panel reactive antibody (1=detectable, 0=undetectable)}
     \item{\code{ageD}}{This numeric vector represents the age of the donor (in years)}
-    \item{\code{death.time}}{This numeric vector represents the follow up time (until death or censoring)}
+    \item{\code{death.time}}{This numeric vector represents the follow up time in days (until death or censoring)}
     \item{\code{death}}{This numeric vector represents the death indicator at the follow-up end (1=death, 0=alive)}
   }
 }

@@ -1,0 +1,83 @@
+\name{adjusted.ROC}
+\alias{adjusted.ROC}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{
+Confounders-Adjusted ROC Curves Without Right Censored Data.
+}
+\description{
+This function allows for the estimation of ROC curve by taking into account possible confounding factors (IPW or placement values estimators).
+}
+\usage{
+adjusted.ROC(status, variable, confounders,  database, precision, estimator)
+}
+\arguments{
+  \item{status}{A character string with the name of the variable in \code{database} which represents the disease status indicator (for instance: 0=healthy, 1=diseased).}
+  \item{variable}{A character string with the name of the variable in \code{database} which represents the diagnostic/prognostic variable under interest.}
+  \item{confounders}{An object of class "formula". More precisely only the right part with an expression of the form \code{~ model}, where \code{model} is the linear predictor of the logistic regressions performed for each cut-off value. The user can use \code{~1} to obtain the crude estimation.}
+  \item{database}{An object of the class \code{data.frame} containing the variables previously detailed.}
+  \item{precision}{A numeric vector with values between 0 and 1. The values represent the x-axis (1-specificity) of the ROC graph for which the user want to obtain the corresponding sensitivities. 0 and 1 are not allowed.}
+  \item{estimator}{Two possible estimators can be used: "ipw" and "pv". IPW is based on the Inverse Probability Weigthing theory as proposed by Le Borgne et al. (2015). The IPW estimator is selected by default. The user can also use the placement values estimator as proposed by Pepe and Cai (Biometrics, 2004).}
+}
+\details{
+This function computes confounder-adjusted ROC curve for uncensored data. We adapted the usual estimator by considering the probability for a patient to have a prognostic variable higher than a given cut-off value, given the possible confounding factors. This estimator is obtain by using "ipw" in the option \code{estimator}. The user can also use the estimator first proposed by Pepe and Cai (2004) which is based on placement values.
+}
+\value{
+\item{table}{This data frame presents the sensitivities and specificities.}
+\item{auc}{The area under the ROC curve.}
+}
+\references{
+Blanche P, Dartigues J, Jacqmin-Gadda H. (2013) Review and comparison of roc curve estimators for a time-dependent outcome with marker-dependent censoring. Biometrical Journal, 55, 687-704. <DOI: 10.1002/bimj.201200045>
+
+Pepe MS and Cai T. (2004) The analysis of placement values for evaluating discriminatory measures. Biometrics, 60(2), 528-35. <DOI: 10.1111/j.0006-341X.2004.00200.x>
+
+Le Borgne F, Giraudeau B, Giral M, Foucher Y. (2015) Adjusted time-dependent ROC curves. Manuscript submitted.
+}
+\author{
+Y. Foucher <Yohann.Foucher@univ-nantes.fr>
+}
+%\note{
+%%  ~~further notes~~
+%}
+
+%% ~Make other sections like Warning with \section{Warning }{....} ~
+
+%\seealso{
+%% ~~objects to See Also as \code{\link{help}}, ~~~
+%}
+\examples{
+
+# import and attach the data example
+
+data(dataDIVAT)
+
+# The ROC curve to evaluate the crude capacities of the recipient age for the
+# prognosis of post kidney transplant mortality (we ignore the censoring process)
+
+roc1 <- adjusted.ROC(status="death", variable="ageR", confounders=~1, 
+ database=dataDIVAT, precision=seq(0.1,0.9, by=0.1) )
+
+# The confounder-adjusted ROC curve to evaluate the capacities
+# of the recipient age for the prognosis of post kidney transplant 
+# mortality by taking into account the donor age and the recipient
+# gender (we ignore the censoring process).
+
+roc2 <- adjusted.ROC(status="death", variable="ageR", confounders=~bs(ageD, df=3) +
+  sexeR, database=dataDIVAT, precision=seq(0.1,0.9, by=0.1))
+
+# The corresponding ROC graph
+
+plot(1-roc1$table$sp, roc1$table$se, ylim=c(0,1), xlim=c(0,1), ylab="sensitivity",
+  xlab="1-specificity", type="l", lty=1, col=1, lwd=2)
+ 
+lines(1-roc2$table$sp, roc2$table$se, col=2, lwd=2, lty=2)
+
+abline(c(0,0), c(1,1), lty=2)
+
+legend("bottomright", lty=1:2, lwd=2, col=1:2, c(
+  paste("Crude estimation, (AUC=", round(roc1$auc, 2), ")", sep=""),
+  paste("Adjusted estimation, (AUC=", round(roc2$auc, 2), ")", sep="") ) )
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ ROC }
+\keyword{ IPW }

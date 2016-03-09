@@ -2,10 +2,10 @@
 \alias{rein.ratetable}
 \docType{data}
 \title{
-Expected mortality of French patients with End Stage Kidney Disease (ESKD) in dialysis and registrited previously on waiting list for renal transplantation
+Expected Mortality Of French Patients With ESKD.
 }
 \description{
-An object of the class ratetable which contains the expected mortality of French patients with End Stage Kidney Disease (ESKD) in dialysis and registered previously on waiting list for renal transplantation. It is an array with two dimensions: the time since the registry on waiting list and the patient profile at this baseline.
+An object of the class rate-table which contains the expected mortality of French patients with End Stage Kidney Disease (ESKD) in dialysis and registered previously on waiting list for renal transplantation. It is an array with two dimensions: the time since the registry on waiting list and the patient profile at this baseline.
 }
 \usage{data(rein.ratetable)}
 \format{
@@ -20,7 +20,7 @@ An object of the class ratetable which contains the expected mortality of French
  }
 }
 \details{
-The organization of a ratetable object is described in details by Therneau (1999) and Pohar (2006). We have estimated these data by using the renal epidemiology and information network (REIN). A competing risk model was performed in order to deal with the loss of follow-up to the transplantation. The \code{profile} represents the concatenation of the significant binary variables associated with the mortality on waiting list. In order to obtain the same variable in your database, we have to concatenate the following values in the same order. These values are collected at the registration date:
+The organization of a rate-table object is described in details by Therneau (1999) and Pohar (2006). We have estimated these data by using the renal epidemiology and information network (REIN). A competing risk model was performed in order to deal with the loss of follow-up to the transplantation. The \code{profile} represents the concatenation of the significant binary variables associated with the mortality on waiting list. In order to obtain the same variable in your database, we have to concatenate the following values in the same order. These values are collected at the registration date:
 
 \tabular{rl}{
 a. \tab 1 if the patient is male and 0 if female. \cr
