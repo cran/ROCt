@@ -13,8 +13,8 @@ Compute ROC curve and expected utility for medical decision making, with and wit
  \tab  \cr
 Package: \tab ROCt\cr
 Type: \tab Package\cr
-Version: \tab 0.9.4\cr
-Date: \tab 2016-03-09\cr
+Version: \tab 0.9.5\cr
+Date: \tab 2017-02-17\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -38,17 +38,11 @@ adjusted.ROCt \tab  This function allows for the estimation of time-dependent RO
 Y. Foucher <Yohann.Foucher@univ-nantes.fr>
 }
 \references{
-Heagerty PJ., Lumley T., Pepe MS. (2000) Time-dependent ROC Curves for Censored Survival Data and a Diagnostic Marker. Biometrics, 56, 337-344.
+Heagerty PJ., Lumley T., Pepe MS. (2000) Time-dependent ROC Curves for Censored Survival Data and a Diagnostic Marker. Biometrics, 56, 337-344. <doi:10.1111/j.0006-341X.2000.00337.x>
 
-Lorent M., Giral M., Foucher Y. (2013) Net time-dependent ROC curves: a solution for evaluating the accuracy of a marker to predict disease-related mortality. Statistics in Medicine, 33, 2379-89.
+Lorent M., Giral M., Foucher Y. (2013) Net time-dependent ROC curves: a solution for evaluating the accuracy of a marker to predict disease-related mortality. Statistics in Medicine, 33, 2379-89. <doi:10.1002/sim.6079>
 
-Tessier P. et al. (2015) Threshold definition of a prognostic marker in stratified medicine: An expected utility function for time-to-event data. Manuscript submitted.
+Dantan E., Foucher Y., Lorent M., Giral M., Tessier P. (2016) Optimal threshold estimator of a prognostic marker by maximizing a time-dependent expected utility function for a patient-centered stratified medicine. Statistical Methods in Medical Research, 0, 1-13. <doi:10.1177/  0962280216671161>
 
-Le Borgne F. et al. (2015) Adjusted time-dependent ROC curves. Manuscript submitted.
-}
-\keyword{ Time-dependent }
-\keyword{ ROC }
-\keyword{ Utility }
-\seealso{
-URL: www.divat.fr
+Le Borgne F. et al. (2017) Standardized and weighted time-dependent ROC curves to evaluate the intrinsic prognostic capacities of a marker by taking into account confounding factors. Manuscript submitted.
 }

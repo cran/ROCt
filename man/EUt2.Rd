@@ -35,11 +35,11 @@ This function computes the expected time-dependent utility for the \code{cut-off
 }
 
 \references{
-Schlichting et al. (1983) Prognostic factors in cirrhosis identified by Cox's regression model. Hepatol Baltim Md, 3(6):889-95. <DOI: 10.1002/hep.1840030601>
+Schlichting et al. (1983) Prognostic factors in cirrhosis identified by Cox's regression model. Hepatol Baltim Md, 3(6):889-95. <doi: 10.1002/hep.1840030601>
 
-Royston and Parmar. (2011) The use of restricted mean survival time to estimate the treatment effect in randomized clinical trials when the proportional hazards assumption is in doubt. Statistics in Medicine, 30(19):2409-21. <DOI: 10.1002/sim.4274>
+Royston P. and Parmar M.K. (2011) The use of restricted mean survival time to estimate the treatment effect in randomized clinical trials when the proportional hazards assumption is in doubt. Statistics in Medicine, 30(19):2409-21. <doi:10.1002/sim.4274>
 
-Dantan et al. (2015) Threshold definition of a prognostic marker in stratified medicine: An expected utility function for time-to-event data. Manuscript submitted.
+Dantan E., Foucher Y., Lorent M., Giral M., Tessier P. (2016) Optimal threshold estimator of a prognostic marker by maximizing a time-dependent expected utility function for a patient-centered stratified medicine. Statistical Methods in Medical Research, 0, 1-13. <doi:10.1177/  0962280216671161>
 }
 \author{
 Y. Foucher <Yohann.Foucher@univ-nantes.fr>
@@ -91,6 +91,4 @@ EUt.obj$estimation
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ Utility }
-\keyword{ Cut-off }
-\keyword{ Time-dependent }
+\keyword{ utility }

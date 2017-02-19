@@ -20,13 +20,13 @@ An object of class ratetable for the expected mortality of the French population
  }
 }
 \details{
-The organization of a ratetable object is described in details by Therneau (1999) and Pohar (2006).
+The organization of a ratetable object is described in details by Therneau (1999) and Pohar (2006). The original data and updates can be downloaded from the Human Life-Table Database (HMD, The Human Mortality Database).
 }
-\source{
-The original data and updates can be downloaded from the Human Life-Table Database (HMD, The Human Mortality Database). URL: http://www.mortality.org/
-}
+
+\source{ URL: http://www.mortality.org }
+
 \references{
-Pohara M., Stare J. Relative survival analysis in R. Computer methods and programs in biomedicine, 81: 272-278, 2006. <DOI:10.1016/j.cmpb.2006.01.004>
+Pohara M., Stare J. Relative survival analysis in R. Computer methods and programs in biomedicine, 81: 272-278, 2006. <doi:10.1016/j.cmpb.2006.01.004>
 }
 \examples{
 data(fr.ratetable)
@@ -34,6 +34,5 @@ data(fr.ratetable)
 is.ratetable(fr.ratetable)
 
 }
-\keyword{datasets}
-\keyword{France}
+\keyword{dataset}
 \keyword{ratetable}

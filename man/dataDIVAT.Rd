@@ -24,9 +24,7 @@ A data frame with 4267 French kidney transplant recipients. The time-to-event is
 \details{
 The immunology and nephrology department of the Nantes University hospital constituted a data bank with the monitoring of medical records for kidney and/or pancreas transplant recipients. The associated software is called DIVAT. Here is a sample of 4267 patients. The time-to-event is the time between the transplantation and the death of the recipient. This time can be right-censored. A vector of covariates, all measured at the transplantation, is also collected for each patient.
 }
-\source{
-URL: http://www.divat.fr. 
-}
+\source{ URL: http://www.divat.fr }
 \examples{
 data(dataDIVAT)
 
@@ -38,6 +36,6 @@ plot(survfit(Surv(death.time/365.25, death) ~ 1, data = dataDIVAT),
  xlab="Post transplantation time (in years)", ylab="Patient survival",
  mark.time=FALSE)
 }
-\keyword{datasets}
-\keyword{Divat}
+
+\keyword{ dataset }
 

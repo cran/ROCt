@@ -36,10 +36,10 @@ j. \tab 1 if the calendar year at registration is strictly higher than 2007 and 
 }
 }
 \source{
-URL: http://www.soc-nephrologie.org/REIN/
+URL: https://www.agence-biomedecine.fr/Le-programme-REIN
 }
 \references{
-Pohar M., Stare J. (2006) Relative survival analysis in R. Computer methods and programs in biomedicine, 81, 272-278.
+Pohar M., Stare J. (2006) Relative survival analysis in R. Computer methods and programs in biomedicine, 81, 272-278.  <doi:10.1016/j.cmpb.2006.01.004>
 }
 \examples{
 data(rein.ratetable)
@@ -47,6 +47,6 @@ data(rein.ratetable)
 is.ratetable(rein.ratetable)
 
 }
-\keyword{datasets}
+\keyword{dataset}
 \keyword{ratetable}
 

@@ -36,9 +36,9 @@ This function computes net time-dependent ROC curve with right-censored data usi
 \item{warning}{This message indicates possible difficulties in the computation of the net ROC curve, for instance if the net survival was not lower or equal1 to 1 for particular cut-off values or times.}
 }
 \references{
-Pohar M., Stare J., Esteve J. (2012) On Estimation in Relative Survival. Biometrics, 68, 113-120. <DOI: 10.1111/j.1541-0420.2011.01640.x>
+Pohar M., Stare J., Esteve J. (2012) On Estimation in Relative Survival. Biometrics, 68, 113-120. <doi:10.1111/ j.1541-0420.2011.01640.x>
 
-Lorent M., Giral M., Foucher Y. (2013) Net time-dependent ROC curves: a solution for evaluating the accuracy of a marker to predict disease-related mortality. Statistics in Medicine, 33, 2379-89. <DOI: 10.1002/sim.6079>
+Lorent M., Giral M., Foucher Y. (2013) Net time-dependent ROC curves: a solution for evaluating the accuracy of a marker to predict disease-related mortality. Statistics in Medicine, 33, 2379-89. <doi:10.1002/sim.6079>
 }
 \author{
 Y. Foucher <Yohann.Foucher@univ-nantes.fr>
@@ -105,6 +105,4 @@ legend("bottomright", paste("Without knn, (AUC=",
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ROC }
-\keyword{ Akritas }
-\keyword{ Net survival }
+\keyword{ net survival }

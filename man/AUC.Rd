@@ -27,7 +27,5 @@ Y. Foucher <Yohann.Foucher@univ-nantes.fr>
 se.temp <- c(0, 0.5, 0.5, 1)
 sp.temp <- c(1, 0.5, 0.5, 0)
 AUC(se.temp, sp.temp)
-
 }
 
-\keyword{ AUC }

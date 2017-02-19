@@ -28,9 +28,9 @@ This function computes time-dependent ROC curve with right-censored data. It can
 \item{missing}{Number of deleted observations due to missing data.}
 }
 \references{
-Heagerty PJ., Lumley T., Pepe MS. (2000) Time-dependent ROC Curves for Censored Survival Data and a Diagnostic Marker. Biometrics, 56, 337-344.  <DOI: 10.1111/j.0006-341X.2004.00200.x>
+Heagerty PJ., Lumley T., Pepe MS. (2000) Time-dependent ROC Curves for Censored Survival Data and a Diagnostic Marker. Biometrics, 56, 337-344. <doi:10.1111/j.0006-341X.2000.00337.x>
 
-Blanche P, Dartigues J, Jacqmin-Gadda H. (2013) Review and comparison of roc curve estimators for a time-dependent outcome with marker-dependent censoring. Biometrical Journal, 55, 687-704.  <DOI: 10.1002/bimj.201200045>
+Blanche P, Dartigues J, Jacqmin-Gadda H. (2013) Review and comparison of roc curve estimators for a time-dependent outcome with marker-dependent censoring. Biometrical Journal, 55, 687-704.  <doi:10.1002/bimj.201200045>
 }
 \author{
 Y. Foucher <Yohann.Foucher@univ-nantes.fr>
@@ -90,6 +90,4 @@ AUC(sens=roc1$table$se, spec=roc1$table$sp)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ROC }
-\keyword{ Akritas }
-\keyword{ Time-dependent }
+\keyword{ crude }
